@@ -33,7 +33,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            
             
     <div className='abtImageContainer'>
                 <div className="abtImage">
@@ -41,6 +41,7 @@ const Home = () => {
                     <button className="btn">Download CV</button>
                 </div>
             </div>
+    </div>
     </div>
     );
 };
