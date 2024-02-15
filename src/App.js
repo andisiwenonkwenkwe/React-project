@@ -5,8 +5,13 @@ import './App.css';
 import Navbar from './Components/NavBar';
 import Home from './Components/Home';
 import About from './Components/About';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact'
 
-import Testimonies from './Components/Testimonies';
+
+
+
+
 
 const App = () => {
   return (
@@ -14,13 +19,10 @@ const App = () => {
       <Navbar />
       <Home />
       <About />
-    <Testimonies />
+    <Projects />
+    <Contact />
     
-      
       </div>
-  
-    
-
   );
 };
 

@@ -1,42 +1,52 @@
 import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
+import image1 from './images/Financial Calculator.jpg';
+import image2 from './images/Tax Calculator.webp';
+import image3 from './images/Matrix Converter.png';
+import image4 from './images/Flappy bird.jpg';
+import image5 from './images/Banking App.jpg';
 
-import vimage from './images/Banking App.jpg';
-import iimage from './images/Matrix Converter.png';
-import Iimage from './images/6.jpg';
-import mimage from './images/Tax Calculator.webp';
-
-const Projects = () => {
+const ProjectSlider = () => {
+  // Sample project data
   const projects = [
-    {
-        title: 'Bakery Website',
-        image: vimage,
-        description: 'This is an online platform created to showcase its products, provide information to customers, and often facilitate online ordering or inquiries.'
-    },
-    {
-        title: 'Banking App',
-        image: iimage,
-        description: 'Banking app allows users to access and manage their bank accounts and financial transactions on the go.'
-    },
-    {
-        title: 'Financial Calculator',
-        image: Iimage,
-        description: 'This is a software application designed to help individuals and professionals perform various financial calculations quickly and accurately.'
-    },
-    {
-        title: 'Metrics Converter',
-        image: mimage,
-        description: 'This Metric converter allows users to convert measurements from one unit of the metric system to another.'
-    },
-    
+    { id: 1, title: 'Financial Calculator', description: 'A tool for financial calculations', imageUrl: image1 },
+    { id: 2, title: 'Tax Calculator', description: 'Calculate your taxes easily', imageUrl: image2 },
+    { id: 3, title: 'Matrix Converter', description: 'Convert matrices with ease', imageUrl: image3 },
+    { id: 4, title: 'Flappy Bird', description: 'A fun and addictive game', imageUrl: image4 },
+    { id: 5, title: 'Banking App', description: 'Manage your finances on the go', imageUrl: image5},
+
   ];
+
+  // Slider settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
 
   return (
     <div>
-      <h2>Projects</h2>
- 
+      <section className='projects'>
+      <h2>My Projects</h2>
+      <Slider className='Slider' {...settings}>
+        {projects.map((project) => (
+          <div key={project.id}>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <img src={project.imageUrl} alt={project.title} />
+          </div>
+        ))}
+      </Slider>
+      </section>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectSlider;

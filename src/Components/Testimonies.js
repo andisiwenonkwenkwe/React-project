@@ -1,47 +1,67 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React, { useEffect } from 'react';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css'; // Import Swiper CSS
 
-import image1 from './images/Financial Calculator.jpg';
-import image2 from './images/Tax Calculator.webp';
-import image3 from './images/Matrix Converter.png';
-import image4 from './images/Flappy bird.jpg';
 
-const ProjectSlider = () => {
-  // Sample project data
-  const projects = [
-    { id: 1, title: 'Thee Best Construction Website', imageUrl: image1 },
-    { id: 2, title: 'Financial Calculator', imageUrl: image2 },
-    { id: 3, title: 'Chat App', imageUrl: image3 },
-    { id: 4, title: 'Bank App', imageUrl: image4 },
+import nature1 from './images/Banking App.jpg';
+import nature2 from './images/Tax Calculator.webp';
+import nature3 from './images/Matrix Converter.png';
+import nature4 from './images/Financial Calculator.jpg';
 
-  ];
+function Testimonies() {
+  useEffect(() => {
+    const swiper = new Swiper('.cubeSwiper', {
+      // Swiper configuration options...
+      effect: 'cube',
+      grabCursor: true,
+      pauseOnMouseEnter: true,
+      speed: 2000,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      cubeEffect: {
+        shadow: false,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
 
-  // Slider settings
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+    // Destroy swiper instance when component unmounts
+    return () => {
+      swiper.destroy(true, true);
+    };
+  }, []);
 
   return (
     <div>
-      <h2>My Projects</h2>
-      <Slider {...settings}>
-        {projects.map((project) => (
-          <div key={project.id}>
-            <h3>{project.title}</h3>
-            <img src={project.imageUrl} alt={project.title} />
+      <h1>Testimonies</h1>
+      <div className="cube-parent-container">
+        <div className="swiper cubeSwiper">
+          <div className="swiper-wrapper">
+            <div className="swiper-slide">
+              <img src={nature1} alt="Nature 1" />
+            </div>
+            <div className="swiper-slide">
+              <img src={nature2} alt="Nature 2" />
+            </div>
+            <div className="swiper-slide">
+              <img src={nature3} alt="Nature 3" />
+            </div>
+            <div className="swiper-slide">
+              <img src={nature4} alt="Nature 4" />
+            </div>
           </div>
-        ))}
-      </Slider>
+          <div className="swiper-pagination"></div>
+        </div>
+      </div>
+     
     </div>
   );
-};
+}
 
-export default ProjectSlider;
+export default Testimonies;

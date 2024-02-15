@@ -4,6 +4,9 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%; /* Adjust width as needed */
+  position: fixed;
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; 
   
 }
 
@@ -176,192 +179,6 @@ nav {
 }
 
 
-/* Experience
-
-
-.box {
-  height: 804px;
-  position: relative;
-  width: 814px;
-}
-
-.group {
-  height: 100%;
-  width: 100%;
-}
-
-.overlap {
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.rectangle {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 302px;
-}
-
-.company-name,
-.element-july-jan,
-.position-full-stack,
-.text-wrapper,
-.div,
-.position-full-stack-2,
-.position-software,
-.element-jun,
-.p {
-  color: #000000;
-  font-family: "Inter-Medium", Helvetica;
-  font-size: 20px;
-  font-weight: 500;
-  position: absolute;
-  white-space: nowrap;
-}
-
-.company-name {
-  top: 37px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.element-july-jan {
-  top: 107px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.arrow-stroke {
-  position: absolute;
-  top: 109px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 103px;
-}
-
-.position-full-stack {
-  top: 177px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.overlap-group {
-  position: absolute;
-  top: 29%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.text-wrapper {
-  top: 36px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.div {
-  top: 107px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.img {
-  position: absolute;
-  top: 166px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 103px;
-}
-
-.position-full-stack-2 {
-  top: 181px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.experience {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 216px;
-}
-
-.overlap-2 {
-  position: absolute;
-  top: 49%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-}
-
-.line-stroke,
-.line-stroke-2 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 100%;
-}
-
-.line-stroke {
-  left: 30%;
-}
-
-.line-stroke-2 {
-  left: 25%;
-}
-
-.overlap-group-wrapper {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.overlap-group-2 {
-  position: relative;
-  width: 100%;
-}
-
-.arrow-stroke-2 {
-  position: absolute;
-  top: 126px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 103px;
-}
-
-.rectangle-2 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 302px;
-}
-
-.position-software {
-  top: 153px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 281px;
-}
-
-.element-jun {
-  top: 85px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 127px;
-}
-
-.p {
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 280px;
-}*/
 
 /* Projects */
 
@@ -421,33 +238,135 @@ nav {
 
 /*Slideshow*/
 
-.slider-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-}
 
-.slider {
+.Slider { 
+  position: relative;
+  justify-content: center;
+  height: 40rem;
+  max-width: 60rem;
+}
+.Slider img {
+  height:30rem;
+  width: 30rem;
+  padding-left: 20rem;
+}
+.projects{
+  height: 60rem;
+  justify-content: center;
+  padding-left: 5rem;
+}
+.projects h2{
+  font-weight:700;
+  margin-top: 5rem;
+}
+.projects p,.projects h3{
+  padding-left: 20rem;
+}
+/* Add styles for the dots in the slider */
+.slick-dots {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
 }
 
-.slide {
-  flex: 0 0 auto;
-  width: 50%;
+.slick-dots li {
+  margin: 0 4px; /* Adjust the spacing between dots */
 }
 
-.slide img {
-  width: 50%;
-  height: auto;
-  display: block;
+.slick-dots li button {
+ 
+  border-radius: 50%; /* Make the dots circular */
+  background-color: red; /* Set the background color of the dots */
+  border: none; /* Remove border */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
 }
 
-.active {
-  opacity: 1;
+.slick-dots li button:hover {
+  background-color: red; /* Change background color on hover */
 }
 
-.slide:not(.active) {
-  opacity: 0;
+.slick-dots .slick-active button {
+  background-color: red; /* Set background color of active dot */
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+/*Contact me */
+
+.title-center {
+  text-align: center;
+  color: #8ACDD7;
+  font-size: 50px;
+}
+
+.button{
+  color: #ff004f;
+  position: relative;
+  font-size: 1.2em;
+  border-radius: 15px;
+  color: black;
+  background-color: #8ACDD7;
+  border: none;
+  cursor: pointer;
+  width: 10rem;
+  height: 2rem;
+}
+
+.button:hover {
+  background: #ff90BC;
+}
+
+
+.form-control {
+ 
+  height: 2rem;
+  width: 35rem;
+  }
+
+
+
+
+.form-control {
+ 
+  height: 2rem;
+  width: 35rem;
+  }
+
+
+.form-group label{
+  font-weight: 600;
+  
+} 
+
+
+
+/*footer*/
+
+.footer {
+  position: relative;
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color */
+  bottom: -30rem;
+  width: 100%;
+  text-align: center;
+ 
+}
+
+
+.footer p {
+  margin: 0; /* Remove default margin for paragraphs inside the footer */
+  font-size: 14px; /* Adjust the font size */
+}
+
+.footer a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
 }
