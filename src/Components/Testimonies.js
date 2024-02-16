@@ -1,67 +1,74 @@
-import React, { useEffect } from 'react';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css'; // Import Swiper CSS
+import React, { useState, useEffect, useRef } from 'react';
+import image1 from './images/2.jpg';
+import image2 from './images/1.jpg';
+import image3 from './images/3.jpg';
 
 
-import nature1 from './images/Banking App.jpg';
-import nature2 from './images/Tax Calculator.webp';
-import nature3 from './images/Matrix Converter.png';
-import nature4 from './images/Financial Calculator.jpg';
+function Slideshow() {
+  const [index, setIndex] = useState(0);
+  const timeoutRef = useRef(null);
 
-function Testimonies() {
+  const slides = [
+    { imageUrl: image1, text: "Text for Slide 1" },
+    { imageUrl: image2, text: "Text for Slide 2" },
+    { imageUrl: image3, text: "Text for Slide 3" }
+  ];
+
+  const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+  const delay = 2500;
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
   useEffect(() => {
-    const swiper = new Swiper('.cubeSwiper', {
-      // Swiper configuration options...
-      effect: 'cube',
-      grabCursor: true,
-      pauseOnMouseEnter: true,
-      speed: 2000,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      cubeEffect: {
-        shadow: false,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
 
-    // Destroy swiper instance when component unmounts
     return () => {
-      swiper.destroy(true, true);
+      resetTimeout();
     };
-  }, []);
+  }, [index]);
 
   return (
-    <div>
-      <h1>Testimonies</h1>
-      <div className="cube-parent-container">
-        <div className="swiper cubeSwiper">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <img src={nature1} alt="Nature 1" />
-            </div>
-            <div className="swiper-slide">
-              <img src={nature2} alt="Nature 2" />
-            </div>
-            <div className="swiper-slide">
-              <img src={nature3} alt="Nature 3" />
-            </div>
-            <div className="swiper-slide">
-              <img src={nature4} alt="Nature 4" />
-            </div>
+    <div className="slideshow">
+      <div
+        className="slideshowSlider"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {slides.map((slide, idx) => (
+          <div
+            className="slide"
+            key={idx}
+            style={{ backgroundColor: colors[idx] }}
+          >
+            <img src={slide.imageUrl} alt={`Slide ${idx + 1}`} />
+            <p>{slide.text}</p>
           </div>
-          <div className="swiper-pagination"></div>
-        </div>
+        ))}
       </div>
-     
+
+      <div className="slideshowDots">
+        {slides.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
     </div>
   );
 }
 
-export default Testimonies;
+export default Slideshow;
