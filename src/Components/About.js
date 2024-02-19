@@ -3,7 +3,7 @@ import image from './images/012.jpg';
 
 const About = () => {
     return (
-        <div className="about" id="about-section">
+        <div className="about" id="about">
             <section className="about-mf sect-pt4 route">
                 <div className="container">
                     <div className="row">

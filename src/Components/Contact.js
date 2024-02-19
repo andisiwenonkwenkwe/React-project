@@ -22,7 +22,7 @@ const Contact = () => {
                                                 </h5>
                                             </div>
                                             <div>
-                                                <form id="contactForm">
+                                                <form id="contactForm" className='form'>
                                                     <div className="form-group">
                                                         <label htmlFor="name">Your Name</label>
                                                         <input type="text" name="name" className="form-control" id="name"  required />

@@ -373,8 +373,12 @@ ul li a {
 /* Projects */
 
 
+
+
+
+
 #projects .container {
-  background-color: rgb(245, 245, 245);
+
   margin-top: 3rem;
   width: auto;
   height: 100vh;
@@ -396,7 +400,7 @@ ul li a {
 }
 
 .work-img img {
-  background-color: #f5f5f5;
+
   transition: all 1s;
   height: 200px; /* Adjust the height to your preference */
   width: auto;
@@ -426,6 +430,19 @@ ul li a {
   width: 2rem;
 }
 
+.project-item {
+  position: relative;
+}
+
+.github-button {
+ left: 100rem;
+ transform: translateY(-50%);
+ display: flex;
+ justify-content: center;
+ gap: 1rem;
+ transition: 400ms;
+}
+
 /*Slideshow*/
 
 
@@ -444,11 +461,15 @@ ul li a {
   height: 60rem;
   justify-content: center;
   padding-left: 5rem;
-  background-color: #8ACDD7;
+  background-color: #ede1e1;
 }
 .projects h2{
   font-weight:700;
-  margin-top: 5rem;
+  margin-top: -2rem;
+  color: #ff90BC;
+  text-align: center;
+  font-size: 2rem;
+  
 }
 .projects p,.projects h3{
   padding-left: 20rem;
@@ -485,13 +506,75 @@ ul li a {
   margin-bottom: 10rem;
   position: relative;
 }
+.project-container {
+  position: relative;
+  width: fit-content;
+  
+}
+
+.description-container {
+  position: absolute;
+  top: 0;
+  left: 17rem;
+  background-color: #8ACDD7;
+  color: white;
+  padding: 10px;
+  opacity: transparent;
+ 
+
+  display: none;
+  z-index: 1;
+  height: 40rem;
+  max-width: 34rem;
+}
+
+.project-container:hover .description-container {
+  display: block;
+}
+
+.description { 
+  color: #000;
+  position: relative;
+  right: 14rem;
+  font-size: 1.5rem;
+}
+
+
+
+/*Testimonies*/
+
+
+.slide p {
+  width: 80%; /* Adjust as needed */
+  max-width: 100%; /* Ensure the text does not exceed the container */
+  overflow: hidden;
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Ensure long words break */
+  height: 5rem;
+  font-size: 15px;
+  color: #000;
+}
+
+.slideshow{
+  text-align: center;
+  color: #ff90BC;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-bottom: 80px; /* Adjust as needed */
+}
+
+
 
 /*Contact me */
+
 
 .title-center {
   text-align: center;
   color: #8ACDD7;
-  font-size: 50px;
+  font-size: 30px;
+  margin-left: 30rem;
 }
 
 .button{
@@ -512,11 +595,7 @@ ul li a {
 }
 
 
-.form-control {
- 
-  height: 2rem;
-  width: 35rem;
-  }
+
 
 
 
@@ -534,23 +613,60 @@ ul li a {
 } 
 
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+.contact .form {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  padding: 20px;
+}
+
+
+
+
+.contact .title-left {
+  margin-bottom: 20px;
+  margin-left: 400px;
+}
+
+.contact form {
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.contact .form-group {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.contact .form-group label {
+  display: block;
+  margin-bottom: 15px; /* Adjust as needed */
+}
+
+
 
 /*footer*/
 
 .footer {
   position: relative;
-  background-color: #333; /* Background color for the footer */
+  background-color: #ff90BC; /* Background color for the footer */
   color: #fff; /* Text color */
   bottom: -30rem;
-  width: 100%;
+  width: 1450px;
   text-align: center;
+  height: 2rem;
  
 }
 
 
 .footer p {
   margin: 0; /* Remove default margin for paragraphs inside the footer */
-  font-size: 14px; /* Adjust the font size */
+  font-size: 20px; /* Adjust the font size */
+
 }
 
 .footer a {
@@ -558,11 +674,13 @@ ul li a {
   text-decoration: none; /* Remove underline from links */
 }
 
-.footer a:hover {
-  text-decoration: underline; /* Add underline on hover for links */
-}
+
 .copyright-box{
-  text-decoration-color: #ff004f;
+  margin-left: 600px;
+  width: 400px;
+}
+.copyright{
+  color: #f5f5f5;
 }
 
 
