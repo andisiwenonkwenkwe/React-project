@@ -13,7 +13,7 @@ function Slideshow() {
     { imageUrl: image3, text: "Andisiwe is a true gem in the world of design. Her innovative ideas and exceptional craftsmanship set her apart from the rest. She not only designed a beautiful website for my business but also provided invaluable insights and guidance throughout the process. Working with Andisiwe was a collaborative and enriching experience, and the results speak for themselves. I am incredibly grateful for her expertise and would recommend her services to anyone seeking excellence in design" }
   ];
 
-  const colors = ["#894B6D", "#E76EB1", "#6D2147"];
+  const colors = ["#8ACDD7", "#8ACDD7", "#8ACDD7"];
   const delay = 2500;
 
   function resetTimeout() {

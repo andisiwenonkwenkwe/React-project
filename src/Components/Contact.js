@@ -1,21 +1,24 @@
 import React from 'react';
+import github from './images/github-logo.svg'; // Import your Facebook SVG icon
+import linkedin from './images/linkedin.svg'; // Import your Twitter SVG icon
+import phone from './images/phone.svg'; 
 
 const Contact = () => {
     return (
         <div className="contact" id="contact">
-            <section id="contact" className="portfolio">
+            <section className="portfolio">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm">
+                        <div className="col-md-6 offset-md-3">
                             <div className="contact-mf">
-                                <div id="contact" className="box-shadow-full">
+                                <div className="box-shadow-full">
                                     <div className="title-box-">
                                         <h1 className="title-center">
                                             Contact Me
                                         </h1>
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-6">
+                                        <div className="col-md-12">
                                             <div className="title-box-2">
                                                 <h5 className="title-left">
                                                     Send Me A Message
@@ -25,15 +28,15 @@ const Contact = () => {
                                                 <form id="contactForm" className='form'>
                                                     <div className="form-group">
                                                         <label htmlFor="name">Your Name</label>
-                                                        <input type="text" name="name" className="form-control" id="name"  required />
+                                                        <input type="text" name="name" className="form-control" id="name" required />
                                                     </div>
                                                     <div className="form-group">
-                                                        <label htmlFor="name">Your Surname</label>
-                                                        <input type="text" name="Surname" className="form-control" id="surname"  required />
+                                                        <label htmlFor="surname">Your Surname</label>
+                                                        <input type="text" name="surname" className="form-control" id="surname" required />
                                                     </div>
                                                     <div className="form-group">
                                                         <label htmlFor="email">Your Email</label>
-                                                        <input type="email" name="email" className="form-control" id="email"  required />
+                                                        <input type="email" name="email" className="form-control" id="email" required />
                                                     </div>
                                                     <div className="form-group">
                                                         <label htmlFor="message">Your Message</label>
@@ -52,23 +55,33 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="footer" id="footer">
-         
-            <footer>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-sm-12">
-                            <div className="copyright-box">
-                                <p className="copyright">&copy; Copyright <strong>Andisiwe</strong>. All Rights Reserved</p>
-                                <div className="credits">
-                                    {/* Any additional content or credits */}
+                <footer>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <div className="social-icons">
+                                    <a href="https://github.com/andisiwenonkwenkwe?tab=repositories" target="_blank">
+                                        <img src={github} alt="github" />
+                                    </a>
+                                    <a href="tel:+27784171550"target="_blank">
+                                        <img src={phone} alt="phone" />
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/andisiwe-nonkwenkwe/" target="_blank">
+                                        <img src={linkedin} alt="linkedin" />
+                                    </a>
+                                    {/* Add more social icons as needed */}
+                                </div>
+                                <div className="copyright-box">
+                                    <p className="copyright">
+                                        &copy; Copyright <strong>Andisiwe</strong>.
+                                        All Rights Reserved
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-           
-        </div>
+                </footer>
+            </div>
             </section>
         </div>
     );
