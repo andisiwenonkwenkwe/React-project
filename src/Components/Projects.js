@@ -52,7 +52,7 @@ const ProjectSlider = () => {
                 <img src={project.imageUrl} alt={project.title} />
                 <h3>{project.title}</h3>
                 {/* GitHub Button */}
-                <button>GitHub</button>
+                <button className='github'>GitHub</button>
               </div>
             </a>
           ))}
