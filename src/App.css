@@ -15,7 +15,6 @@ nav {
   padding: 0 20px;
 }
 
-
 .navbar-logo {
   font-size: 24px;
   color: #fff;
@@ -43,8 +42,6 @@ nav {
   font-weight: 600;
 }
 
-
-
 .bar {
   width: 25px;
   height: 3px;
@@ -53,7 +50,41 @@ nav {
   transition: 0.4s;
 }
 
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hide the links by default on smaller screens */
+    position: absolute;
+    top: 80px; /* Adjust as needed */
+    left: 0;
+    background-color: #ff90bc;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
 
+  .navbar-links.active {
+    display: flex; /* Show the links when active */
+    flex-direction: column; /* Align links vertically */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu on smaller screens */
+    cursor: pointer;
+  }
+}
+
+/* Default styles for larger screens */
+@media screen and (min-width: 769px) {
+  .navbar-links {
+    display: flex !important; /* Ensure links are always visible on larger screens */
+  }
+
+  .hamburger-menu {
+    display: none; /* Hide the hamburger menu on larger screens */
+  }
+}
 
 .typed-container {
   position: relative; /* Ensure relative positioning for the container */
@@ -128,6 +159,40 @@ nav {
 }
 
 
+@media (max-width: 768px) {
+  .typed {
+    font-size: 30px;
+    top: 100px;
+    left: 10px;
+    align-items: center;
+    top: 10rem;
+  }
+
+  #home .container .hero-title {
+    top: 100px;
+  }
+
+  .abtImageContainer {
+    text-align: center;
+  }
+
+  .abtImage {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+    
+  }
+
+  .btn {
+    right: 0;
+    top: 150px;
+  }
+}
+
 
 /*about me */
 .about-section
@@ -198,6 +263,45 @@ nav {
 }
 
 
+/* Mobile View */
+@media (max-width: 767px) {
+  .about-img-container img {
+    width: 15rem;
+    right: auto;
+    bottom: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .about .container .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .about-content {
+    margin-bottom: 100px; /* Adjust as needed */
+  }
+
+  .box-shadow-full {
+    width: auto; /* Allow it to adjust based on content */
+    height: auto;
+  }
+
+  .lead {
+    font-size: 0.8rem;
+  }
+
+  .title-left {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .skill-mf .progress,
+  .skill-mf .progress .progress-bar {
+    height: 0.5rem; /* Adjust the progress bar height */
+  }
+}
+
+/* Experience */
 
 .experience {
   width: 100%;
@@ -398,11 +502,6 @@ ul li a {
 
 /* Projects */
 
-
-
-
-
-
 #projects .container {
 
   margin-top: 3rem;
@@ -569,6 +668,55 @@ ul li a {
 
 
 
+@media only screen and (max-width: 600px) {
+  /* Projects */
+  #projects .container {
+    margin-top: 1rem;
+   
+  }
+  
+  .work-box {
+    top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .work-img img {
+    height: auto;
+  }
+  
+  .text-center .btn {
+    width: 1.5rem;
+  }
+  
+  /*Slideshow*/
+  .Slider img {
+    height: auto;
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  .projects {
+    padding-left: 0.5rem;
+  }
+  
+  .projects p,
+  .projects h3 {
+    padding-left: 0.5rem;
+  }
+  
+  .slick-dots .slick-active button {
+    margin-bottom: 1rem;
+  }
+  
+  .description-container {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 /*Testimonies*/
 
 
@@ -591,6 +739,81 @@ ul li a {
 
 h2 {
   margin-bottom: 80px; /* Adjust as needed */
+}
+
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 700px;
+  justify-content: center;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  text-align: center;
+  height: 700px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: #6a0dad;
+}
+.slide img {
+  width: 500px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .slide p {
+    height: auto;
+    font-size: 12px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .slideshow {
+    font-size: 1.5rem;
+  }
+
+  .slide {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .slide img {
+    width: 300px;
+    height: 300px;
+  }
+  
 }
 
 
@@ -654,7 +877,9 @@ h2 {
   padding: 20px;
 }
 
-
+.contact .container{
+  top: -6rem;
+}
 
 
 .contact .title-left {
@@ -674,7 +899,9 @@ h2 {
   display: block;
   margin-bottom: 15px; /* Adjust as needed */
 }
-
+.contact .form-group textarea {
+  height: 100px;
+}
 
 
 /*footer*/
@@ -683,7 +910,7 @@ h2 {
   position: relative;
   background-color: #ff90BC; /* Background color for the footer */
   color: #fff; /* Text color */
-  bottom: -30rem;
+  bottom: -32rem;
   width: 1450px;
   text-align: center;
   height: 4rem;
@@ -715,10 +942,12 @@ h2 {
 
 
 .social-icons {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 25rem;
+  left: 5rem;
+  top: 1rem;
 
 }
 
@@ -731,53 +960,49 @@ h2 {
   height: 35px;
 }
 
+/* Media Query for Mobile View */
+@media only screen and (max-width: 600px) {
+  .title-center {
+    margin-left: 0;
+  }
 
-/*Testimonies*/
+  .button {
+    width: 60%;
+  }
 
+  .form-control {
+    width: 100%;
+    max-width: none;
+  }
 
+  .contact {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
 
-.slideshow {
-  margin: 0 auto;
-  overflow: hidden;
-  max-width: 700px;
-  justify-content: center;
+  .contact .title-left {
+    margin-left: 0;
+  }
+
+  .contact form {
+    margin-left: 0;
+  }
+
+  .footer {
+    width: 100%;
+    bottom: 0;
+  }
+
+  .copyright-box {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .social-icons {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
-.slideshowSlider {
-  white-space: nowrap;
-  transition: ease 1000ms;
-}
 
-.slide {
-  display: inline-block;
-  text-align: center;
-  height: 700px;
-  width: 100%;
-  border-radius: 40px;
-}
-
-/* Buttons */
-
-.slideshowDots {
-  text-align: center;
-}
-
-.slideshowDot {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-
-  cursor: pointer;
-  margin: 15px 7px 0px;
-
-  background-color: #c4c4c4;
-}
-
-.slideshowDot.active {
-  background-color: #6a0dad;
-}
-.slide img {
-  width: 500px;
-  height: 500px;
-}

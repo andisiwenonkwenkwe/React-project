@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 import image from './images/012.jpg';
+import cvPDF from './Documents/andisiwe.pdf';
 
 const Home = () => {
     useEffect(() => {
@@ -20,6 +21,11 @@ const Home = () => {
         };
     }, []); // Run only once when the component mounts
 
+    // Function to handle the download of the CV PDF
+    const handleDownloadCV = () => {
+        window.open(cvPDF, '_blank'); // Open the PDF in a new tab/window for download
+    };
+
     return (
         <div>
             <div className="home" id="home">
@@ -34,15 +40,17 @@ const Home = () => {
                     </div>
                 </div>
             
-            
-    <div className='abtImageContainer'>
-                <div className="abtImage">
-                    <img src={image} alt="my image" />
-                    <button className="btn">Download CV</button>
+                <div className='abtImageContainer'>
+                    <div className="abtImage">
+                        <img src={image} alt="my image" />
+                        {/* Use an anchor tag with download attribute to trigger the download */}
+                        <a href={cvPDF} download="Andisiwe_Nonkwenkwe_CV.pdf" className="btn" onClick={handleDownloadCV}>
+                            Download CV
+                        </a>
+                    </div>
                 </div>
             </div>
-    </div>
-    </div>
+        </div>
     );
 };
 
