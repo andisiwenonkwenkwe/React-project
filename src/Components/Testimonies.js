@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import image1 from './images/madubela.jpeg';
 import image2 from './images/Nonkululeko.jpeg';
 import image3 from './images/asiphemhambi.jpeg';
+import './Testimonies.css';
 
 function Slideshow() {
   const [index, setIndex] = useState(0);

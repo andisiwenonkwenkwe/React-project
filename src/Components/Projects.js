@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './Projects.css';
 
 import image1 from './images/Financial Calculator.jpg';
 import image2 from './images/Tax Calculator.webp';

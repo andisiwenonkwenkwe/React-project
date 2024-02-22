@@ -1,0 +1,144 @@
+
+/*Contact me */
+
+
+.title-center {
+    text-align: center;
+    color: #8ACDD7;
+    font-size: 30px;
+    margin-left: 30rem;
+  }
+  
+  .button{
+    color: #ff004f;
+    position: relative;
+    font-size: 1.2em;
+    border-radius: 15px;
+    color: black;
+    background-color: #8ACDD7;
+    border: none;
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+  }
+  
+  .button:hover {
+    background: #ff90BC;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .form-control {
+   
+    height: 2rem;
+    width: 35rem;
+    }
+  
+  
+  .form-group label{
+    font-weight: 600;
+    
+  } 
+  
+  
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .contact .form {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    padding: 20px;
+  }
+  
+  .contact .container{
+    top: -6rem;
+  }
+  
+  
+  .contact .title-left {
+    margin-bottom: 20px;
+    margin-left: 400px;
+  }
+  
+  .contact form {
+    margin-top: 20px;
+    margin-left: 400px;
+  }
+  .contact .form-group {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .contact .form-group label {
+    display: block;
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+  .contact .form-group textarea {
+    height: 100px;
+  }
+  
+  
+  /*footer*/
+  
+  .footer {
+    position: relative;
+    background-color: #ff90BC; /* Background color for the footer */
+    color: #fff; /* Text color */
+    bottom: -32rem;
+    width: 1450px;
+    text-align: center;
+    height: 4rem;
+   
+  }
+  
+  
+  .footer p {
+    margin: 0; /* Remove default margin for paragraphs inside the footer */
+    font-size: 20px; /* Adjust the font size */
+  
+  }
+  
+  .footer a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  
+  .copyright-box{
+    margin-left: 600px;
+    width: 400px;
+    margin-bottom: 50rem;
+  }
+  .copyright{
+    color: #f5f5f5;
+    position: relative;
+    top: 1rem;
+  }
+  
+  
+  .social-icons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5rem;
+    top: 1rem;
+  
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+  

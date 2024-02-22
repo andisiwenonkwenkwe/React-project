@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Typed from 'typed.js';
 import image from './images/012.jpg';
 import cvPDF from './Documents/andisiwe.pdf';
+import './Home.css';
 
 const Home = () => {
     useEffect(() => {

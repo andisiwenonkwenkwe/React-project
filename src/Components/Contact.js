@@ -6,6 +6,7 @@ import phone from './images/phone.svg';
 import emailIcon from './images/envelope.svg';
 import whatsapp from './images/whatsapp.svg';
 import ReCAPTCHA from 'react-google-recaptcha';
+import './Contact.css';
 
 const Contact = () => {
     const form = useRef(); // Create a reference to the form element
