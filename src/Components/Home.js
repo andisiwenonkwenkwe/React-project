@@ -29,16 +29,16 @@ const Home = () => {
     return (
         <div>
             <div className="home" id="home">
-                <div className="hero-content display-table">
-                    <div className="table-cell">
+               
+                  
                         <div className="container">
-                            <h1 className="hero-title">I am Andisiwe Nonkwenkwe</h1>
+                            <h1 className="hero-title"> Hellow I am <span>Andisiwe Nonkwenkwe</span></h1>
                             <p className="hero-subtitle">
                                 <span className="typed"></span>
                             </p>
                         </div>
-                    </div>
-                </div>
+                   
+               
             
                 <div className='abtImageContainer'>
                     <div className="abtImage">

@@ -16,8 +16,14 @@ nav {
 }
 
 .navbar-logo {
-  font-size: 24px;
+  font-size: 2rem;
   color: #fff;
+  font-weight: bold;
+}
+.navbar-logo span {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #F9F9E0;
 }
 
 .navbar-links ul {
@@ -67,6 +73,15 @@ nav {
   .navbar-links.active {
     display: flex; /* Show the links when active */
     flex-direction: column; /* Align links vertically */
+
+    
+  }
+  .navbar-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .hamburger-menu {
@@ -84,31 +99,41 @@ nav {
   .hamburger-menu {
     display: none; /* Hide the hamburger menu on larger screens */
   }
+
 }
 
-.typed-container {
-  position: relative; /* Ensure relative positioning for the container */
+
+
+/************Home page****************/
+
+.hero-title span {
+  /* Your styles for the span element */
+  color: #ff90bc;
+  font-size: 3rem;
+  display: inline-block; /* Make the span an inline-block element */
 }
+
+
 .typed {
   font-weight: bold;
-  color: #007bff;
+  color: #8ACDD7;
   font-size: 50px;
   text-align: left;
   position: absolute; /* Position the text absolutely */
-  top: 200; /* Align text to the top */
-  left: 20px; /* Adjust left position as needed */
+  top: 4rem; /* Align text to the top */
+  left: 30px; /* Adjust left position as needed */
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align content to the left vertically */
-  justify-content: center; /* Center content horizontally */
   height: 100vh;
 }
  
 #home .container .hero-title {
   position: relative; 
-  top: 200px; /* Adjust the distance from the bottom */
+  top: 10rem; /* Adjust the distance from the bottom */
   padding: 2rem;
+  
 }
 
 
@@ -118,7 +143,7 @@ nav {
 
 .abtImageContainer {
   text-align: right;
-  margin-top: 30px;
+  margin-bottom: 6rem;
 }
 
 .abtImage {
@@ -127,9 +152,9 @@ nav {
   height: 550px;
   border-radius: 50%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-top: -15%;
   margin-right: 50px;
-  margin-top: -5%; /* Adjust the margin from the top */
+  /* Adjust the margin from the top */
 }
 
 .abtImage img {
@@ -142,16 +167,14 @@ nav {
 /* Download button style */
 .btn {
   position: relative;
-  right: 1200px;
+  right: 50rem;
   top: -150px;
   font-size: 1.2em;
-  border-radius: 15px;
+  border-radius: 10px;
   color: black;
   background-color: #8ACDD7;
   border: none;
   cursor: pointer;
-  width: 10rem;
-  height: 2rem;
 }
 
 .btn:hover {
@@ -192,6 +215,30 @@ nav {
     top: 150px;
   }
 }
+
+
+@media (max-width: 576px) {
+  .typed {
+    font-size: 20px;
+    top: 50px;
+    left: 5px;
+  }
+
+  #home .container .hero-title {
+    top: 50px;
+    padding: 1rem;
+  }
+
+  .abtImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .btn {
+    font-size: 1em;
+  }
+}
+
 
 
 /*about me */
@@ -576,7 +623,6 @@ ul li a {
   justify-content: center;
   height: 40rem;
   max-width: 60rem;
-  background-color: #ff004f;
   left: 10rem;
 }
 .Slider img {
@@ -585,7 +631,7 @@ ul li a {
   padding-left: 15rem;
 }
 .Slider .github{
-  color: #ff004f;
+ 
   position: relative;
   font-size: 1.2em;
   border-radius: 15px;
@@ -595,11 +641,13 @@ ul li a {
   cursor: pointer;
   width: 10rem;
   height: 2rem;
+  margin-left: 15rem;
 }
 
 .Slider .github:hover {
   background: #ff90BC;
 }
+
 
 
 .projects{
@@ -672,6 +720,7 @@ ul li a {
   z-index: 1;
   height: 29rem;
   max-width: 30rem;
+  margin-left: -2rem;
 }
 
 .project-container:hover .description-container {
@@ -682,13 +731,13 @@ ul li a {
   color: #000;
   position: relative;
   right: 14rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
  
 }
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   /* Projects */
   #projects .container {
     margin-top: 1rem;
@@ -713,6 +762,7 @@ ul li a {
     height: auto;
     width: 100%;
     padding-left: 0;
+   
   }
   
   .projects {
@@ -727,28 +777,44 @@ ul li a {
   .slick-dots .slick-active button {
     margin-bottom: 1rem;
   }
+
+
+  .Slider {
+    left: 0;
+    padding: 0 2rem;
+  }
   
   .description-container {
     left: 0;
-    width: 100%;
     max-width: 100%;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .description {
+    right: 0;
+    font-size: 1rem;
   }
 }
-
 
 
 /*Testimonies*/
 
 
 .slide p {
-  width: 80%; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
   max-width: 100%; /* Ensure the text does not exceed the container */
   overflow: hidden;
   white-space: normal; /* Allow text to wrap */
   word-wrap: break-word; /* Ensure long words break */
-  height: 5rem;
-  font-size: 15px;
+  height: 15rem;
+  font-size: 20px;
   color: #000;
+  
+}
+.slide h3 {
+  margin-bottom: -20px; /* Adjust this value to your preference */
+  color: #F9F9E0;
 }
 
 .slideshow{
@@ -804,8 +870,9 @@ h2 {
   background-color: #6a0dad;
 }
 .slide img {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50px 50px 50px 50px;
 }
 
 @media only screen and (max-width: 600px) {

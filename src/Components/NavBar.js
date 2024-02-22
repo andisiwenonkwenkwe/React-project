@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav>
       <div className="navbar-container">
-        <div className="navbar-logo"><span>A</span>ndisiwe</div>
+        <div className="navbar-logo"><span>A.N</span></div>
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <ul>
             <li><a href="#home">Home</a></li>
