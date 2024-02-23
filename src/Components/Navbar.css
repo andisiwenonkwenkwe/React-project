@@ -16,14 +16,8 @@ nav {
   }
   
   .navbar-logo {
-    font-size: 2rem;
+    font-size: 24px;
     color: #fff;
-    font-weight: bold;
-  }
-  .navbar-logo span {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #F9F9E0;
   }
   
   .navbar-links ul {
@@ -56,3 +50,66 @@ nav {
     transition: 0.4s;
   }
   
+
+
+    /* Media Query for Mobile Devices with max-width: 425px */
+    @media screen and (max-width: 425px) {
+        nav {
+          padding: 10px 0; 
+          width: 419px;
+        
+        }
+      
+        
+      
+        .navbar-logo {
+          font-size: 24px; /* Reduced font size for the logo */
+        }
+      
+        .navbar-links ul {
+          display: block;
+          margin-left: 10px; /* Reduced margin between navbar links */
+          
+        }
+      
+        .bar {
+          width: 20px; /* Adjusted width of the hamburger menu bars */
+          margin: 3px 0; /* Adjusted margin of the hamburger menu bars */
+          
+        }
+      
+        .navbar-links {
+            top: 60px; /* Adjusted top position of the links */
+            padding: 5px 0; /* Adjusted padding for the links */
+            display: none; /* Hide the links by default on smaller screens */
+            position: absolute;
+            left: 0;
+            
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+           
+            gap: 0.5rem;
+            justify-content: center; /* Center items horizontally */
+           
+            cursor: pointer;
+            right: 0;
+        }
+        
+      
+        .navbar-links.active {
+          display: flex; /* Show the links when active */
+          
+        
+        }
+      
+        .hamburger-menu {
+          display: block; /* Show the hamburger menu on smaller screens */
+          cursor: pointer;
+          width: 24px;
+          height: 24px;
+         
+        }
+
+        
+      }

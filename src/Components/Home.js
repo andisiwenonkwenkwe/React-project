@@ -10,7 +10,8 @@ const Home = () => {
         const options = {
             strings: ["Software Developer", "Backend Developer", "Front-end Developer", "Web Developer"],
             typeSpeed: 100,
-            loop: true
+            loop: true,
+            showCursor: false
         };
 
         // Initialize Typed.js
@@ -33,7 +34,7 @@ const Home = () => {
                
                   
                         <div className="container">
-                            <h1 className="hero-title"> Hellow I am <span>Andisiwe Nonkwenkwe</span></h1>
+                            <h1 className="hero-title"> Hellow I am  <span>Andisiwe Nonkwenkwe</span></h1>
                             <p className="hero-subtitle">
                                 <span className="typed"></span>
                             </p>
@@ -41,8 +42,8 @@ const Home = () => {
                    
                
             
-                <div className='abtImageContainer'>
-                    <div className="abtImage">
+                <div className='HomeImageContainer'>
+                    <div className="homeImage">
                         <img src={image} alt="my image" />
                         {/* Use an anchor tag with download attribute to trigger the download */}
                         <a href={cvPDF} download="Andisiwe_Nonkwenkwe_CV.pdf" className="btn" onClick={handleDownloadCV}>

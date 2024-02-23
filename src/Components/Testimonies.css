@@ -79,4 +79,22 @@
   
   
   
-  
+  @media only screen and (max-width: 425px) {
+    .slideshow {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        width: 400px;
+        height: 700px;
+    }
+
+    .slide p {
+        margin-top: 40px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .slide img {
+        width: 250px; /* Adjust image width for smaller screens */
+        height: 250px; /* Adjust image height for smaller screens */
+        border-radius: 30px; /* Adjust border-radius for smaller screens */
+    }
+
+}

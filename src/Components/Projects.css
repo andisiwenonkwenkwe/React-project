@@ -185,6 +185,96 @@
     font-size: 1.5rem;
    
   }
+
+
+  @media only screen and (max-width: 425px) {
+    #projects .container {
+      height: auto; /* Adjust height to auto */
+    }
+  
+    .work-box {
+      top: 0; /* Reset top position */
+    }
+  
+    .work-img img {
+      height: auto; /* Adjust height to auto */
+      width: 80%; /* Ensure images fill their containers */
+      margin: 0; /* Remove margin */
+    }
+  
+    .text-center .btn {
+      width: auto; /* Adjust button width to fit content */
+      margin-top: 1rem; /* Add margin for better spacing */
+    }
+  
+    .Slider {
+      height: auto; /* Adjust height to auto */
+      max-width: 80%; /* Ensure slider fills its container */
+      left: 3rem; /* Reset left position */
+    }
+  
+    .Slider img {
+      height: auto; /* Adjust height to auto */
+      width: 80%; /* Ensure images fill their containers */
+      padding: 0; /* Remove padding */
+      margin: 0 auto; /* Center align images */
+      
+    }
+  
+    .Slider .github {
+      width: auto; /* Adjust button width to fit content */
+      margin-left: 0; /* Reset margin */
+      margin-top: 1rem; /* Add margin for better spacing */
+    }
+  
+    .projects {
+      height: auto; /* Adjust height to auto */
+      padding: 2rem 0; /* Add padding for better spacing */
+      text-align: center; /* Center align text */
+      background-color: #ede1e1; /* Keep background color */
+    }
+  
+    .projects h2 {
+      margin-top: 1rem; /* Adjust margin for better spacing */
+      font-size: 1.5rem; /* Adjust font size */
+    }
+  
+    .projects p,
+    .projects h3 {
+      padding-left: 0; /* Reset padding */
+      text-align: center; /* Center align text */
+    }
+  
+    .description-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #8ACDD7;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        display: none;
+        z-index: 1;
+        height: auto; /* Adjust height to fit content */
+        width: 80%; /* Adjust width as needed */
+        max-width: 100%; /* Adjust max-width as needed */
+        margin-left: 10px;
+    }
+  
+    .project-container:hover .description-container {
+        display: block;
+    }
+  
+    .description { 
+        color: #000;
+        font-size: 20px;
+        margin-left: 250px;
+        width: 80%;
+        height: auto;
+    }
+      
+  }
   
   
   
