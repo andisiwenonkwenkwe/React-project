@@ -68,7 +68,7 @@
 
 
 
-@media only screen and (max-width: 425px) {
+@media (max-width: 425px) {
     .about-img-container img {
       width: 15rem; /* Adjust image width for smaller screens */
       right: -2rem; /* Adjust position */
@@ -99,3 +99,8 @@
       height: 0.5rem; /* Adjust progress bar height */
     }
   }
+
+
+
+
+  

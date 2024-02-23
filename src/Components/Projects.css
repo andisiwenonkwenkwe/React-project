@@ -64,6 +64,7 @@
    justify-content: center;
    gap: 1rem;
    transition: 400ms;
+   
   }
   
   /*Slideshow*/
@@ -115,8 +116,12 @@
     font-size: 2rem;
     
   }
-  .projects p,.projects h3{
+  .projects p{
     padding-left: 20rem;
+    font-size: 19px;
+  }
+  .projects h3{
+    font-size: 32px;
   }
   /* Add styles for the dots in the slider */
   .slick-dots {
@@ -174,20 +179,24 @@
     margin-left: -2rem;
   }
   
-  .project-container:hover .description-container {
-    display: block;
-  }
+  .description { 
+    color: #000;
+    font-size: 20px;
+    
+    width: 80%;
+    height: auto;
+}
   
   .description { 
     color: #000;
     position: relative;
-    right: 14rem;
-    font-size: 1.5rem;
+    right: 16rem;
+    font-size: 1rem;
    
   }
+    /************Style for max-width 425*********/
 
-
-  @media only screen and (max-width: 425px) {
+  @media (max-width: 425px) {
     #projects .container {
       height: auto; /* Adjust height to auto */
     }
@@ -268,13 +277,13 @@
   
     .description { 
         color: #000;
-        font-size: 20px;
+        font-size: 6px;
         margin-left: 250px;
         width: 80%;
         height: auto;
     }
       
   }
-  
-  
-  
+
+
+ 

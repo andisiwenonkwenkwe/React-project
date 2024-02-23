@@ -79,7 +79,7 @@
   
   
   
-  @media only screen and (max-width: 425px) {
+  @media (max-width: 425px) {
     .slideshow {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
         width: 400px;
@@ -98,3 +98,5 @@
     }
 
 }
+
+

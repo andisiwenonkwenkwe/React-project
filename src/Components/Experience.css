@@ -137,13 +137,13 @@
   }
   
   
-  @media only screen and (min-width:798px) and (max-width: 1100px) {
+  @media(min-width:798px) and (max-width: 1100px) {
     .container{
         width: 80%;
     }
   }
   
-  @media only screen and (max-width: 798px) {
+  @media (max-width: 798px) {
     .container{
         width: 70%;
         transform: translateX(20px);
@@ -173,7 +173,7 @@
     }
   }
   
-  @media only screen and (max-width: 550px) {
+  @media(max-width: 550px) {
     .container{
         width: 80%;
     }

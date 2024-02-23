@@ -53,11 +53,10 @@ nav {
 
 
     /* Media Query for Mobile Devices with max-width: 425px */
-    @media screen and (max-width: 425px) {
+    @media (max-width: 425px) {
         nav {
           padding: 10px 0; 
           width: 419px;
-        
         }
       
         
@@ -69,6 +68,8 @@ nav {
         .navbar-links ul {
           display: block;
           margin-left: 10px; /* Reduced margin between navbar links */
+          color: black;
+         
           
         }
       
@@ -113,3 +114,10 @@ nav {
 
         
       }
+
+
+      
+
+
+
+      
