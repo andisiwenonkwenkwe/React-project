@@ -1,0 +1,106 @@
+/*******************************about me ****************************/
+.about-section
+{
+  height: 100vh;
+}
+.about-img {
+  margin-bottom: 2rem;
+}
+
+
+.about-img img {
+  width: 100%;
+  max-width: 2rem;
+  height: auto;
+}
+.about-img-container img{
+  position: relative;
+  width: 20rem;
+  height: auto;
+  border-radius: 30%;
+  right: -4rem;
+  bottom: -7rem;
+}
+.about .container .row{
+  display: flex;
+  gap: 10rem;
+}
+.about-content{
+  margin-bottom: 500px;
+}
+
+.box-shadow-full{
+  width: 50rem;
+  height: 10rem;
+  justify-content: flex-end;
+  
+}
+.lead{
+  font-size: .8rem;
+}
+
+
+.title-left {
+  font-size: 24px;
+  color: #ff90BC;
+  text-align: left;
+}
+
+.skill-mf .progress {
+  background-color: #FFC0D9;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: 0.7rem;
+  background-color: #8ACDD7;
+}
+
+.skill-list span {
+  color: #333;
+}
+
+.skill-list .pull-right {
+  float: right;
+}
+
+
+
+@media (max-width: 425px) {
+    .about-img-container img {
+      width: 15rem; /* Adjust image width for smaller screens */
+      right: -2rem; /* Adjust position */
+      bottom: -5rem; /* Adjust position */
+    }
+  
+    .about .container .row {
+      flex-direction: column; /* Stack columns in a vertical layout */
+      gap: 3rem; /* Adjust gap between elements */
+    }
+  
+    .about-content {
+      margin-bottom: 3rem; /* Adjust margin */
+    }
+  
+    .box-shadow-full {
+      width: 100%; /* Make width full for smaller screens */
+      height: auto; /* Adjust height */
+    }
+  
+    .title-left {
+      font-size: 20px; /* Adjust font size */
+      text-align: center; /* Center align text */
+    }
+  
+    .skill-mf .progress,
+    .skill-mf .progress .progress-bar {
+      height: 0.5rem; /* Adjust progress bar height */
+    }
+  }
+
+
+
+
+  

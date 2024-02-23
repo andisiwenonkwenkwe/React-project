@@ -1,0 +1,102 @@
+
+
+/*Testimonies*/
+
+
+.slide p {
+    width: 100%; /* Adjust as needed */
+    max-width: 100%; /* Ensure the text does not exceed the container */
+    overflow: hidden;
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words break */
+    height: 15rem;
+    font-size: 20px;
+    color: #000;
+    
+  }
+  .slide h3 {
+    margin-bottom: -20px; /* Adjust this value to your preference */
+    color: #F9F9E0;
+  }
+  
+  .slideshow{
+    text-align: center;
+    color: #ff90BC;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 80px; /* Adjust as needed */
+  }
+  
+  
+  .slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 700px;
+    justify-content: center;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  
+  .slide {
+    display: inline-block;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 7px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #6a0dad;
+  }
+  .slide img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50px 50px 50px 50px;
+  }
+  
+  
+  
+  @media (max-width: 425px) {
+    .slideshow {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        width: 400px;
+        height: 700px;
+    }
+
+    .slide p {
+        margin-top: 40px;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .slide img {
+        width: 250px; /* Adjust image width for smaller screens */
+        height: 250px; /* Adjust image height for smaller screens */
+        border-radius: 30px; /* Adjust border-radius for smaller screens */
+    }
+
+}
+
+

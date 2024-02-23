@@ -1,10 +1,11 @@
 import React from 'react';
 import image from './images/012.jpg';
+import './About.css';
 
 const About = () => {
     return (
         <div className="about" id="about">
-            <section className="about-mf sect-pt4 route">
+            <section className="about-mf">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">

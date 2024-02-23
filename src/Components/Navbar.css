@@ -1,0 +1,123 @@
+/* Navbar Styles */
+nav {
+    background-color: #ff90BC; /* Background color of the navbar */
+    padding: 15px 0; /* Top and bottom padding */
+    position: fixed;
+    top: 0; /* Stick to the top of the viewport */
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .navbar-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navbar-links ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links ul li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+
+
+    /* Media Query for Mobile Devices with max-width: 425px */
+    @media (max-width: 425px) {
+        nav {
+          padding: 10px 0; 
+          width: 419px;
+        }
+      
+        
+      
+        .navbar-logo {
+          font-size: 24px; /* Reduced font size for the logo */
+        }
+      
+        .navbar-links ul {
+          display: block;
+          margin-left: 10px; /* Reduced margin between navbar links */
+          color: black;
+         
+          
+        }
+      
+        .bar {
+          width: 20px; /* Adjusted width of the hamburger menu bars */
+          margin: 3px 0; /* Adjusted margin of the hamburger menu bars */
+          
+        }
+      
+        .navbar-links {
+            top: 60px; /* Adjusted top position of the links */
+            padding: 5px 0; /* Adjusted padding for the links */
+            display: none; /* Hide the links by default on smaller screens */
+            position: absolute;
+            left: 0;
+            
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+           
+            gap: 0.5rem;
+            justify-content: center; /* Center items horizontally */
+           
+            cursor: pointer;
+            right: 0;
+        }
+        
+      
+        .navbar-links.active {
+          display: flex; /* Show the links when active */
+          
+        
+        }
+      
+        .hamburger-menu {
+          display: block; /* Show the hamburger menu on smaller screens */
+          cursor: pointer;
+          width: 24px;
+          height: 24px;
+         
+        }
+
+        
+      }
+
+
+      
+
+
+
+      

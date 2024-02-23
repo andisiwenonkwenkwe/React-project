@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './Projects.css';
 
 import image1 from './images/Financial Calculator.jpg';
 import image2 from './images/Tax Calculator.webp';
@@ -39,7 +40,7 @@ const ProjectSlider = () => {
         <h2>My Projects</h2>
         <Slider className='Slider' {...settings}>
           {projects.map((project) => (
-            <a key={project.id} href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+            <div key={project.id} className="project-link">
               <div
                 className="project-container"
                 onMouseEnter={() => setHoveredProject(project.id)}
@@ -52,9 +53,11 @@ const ProjectSlider = () => {
                 <img src={project.imageUrl} alt={project.title} />
                 <h3>{project.title}</h3>
                 {/* GitHub Button */}
-                <button>GitHub</button>
+               
+
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className='github'>GitHub</a>
               </div>
-            </a>
+            </div>
           ))}
         </Slider>
       </section>

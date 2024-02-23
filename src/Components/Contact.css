@@ -1,0 +1,214 @@
+
+/*Contact me */
+
+
+.title-center {
+    text-align: center;
+    color: #8ACDD7;
+    font-size: 30px;
+    margin-left: 30rem;
+  }
+  
+  .button{
+    color: #ff004f;
+    position: relative;
+    font-size: 1.2em;
+    border-radius: 15px;
+    color: black;
+    background-color: #8ACDD7;
+    border: none;
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+  }
+  
+  .button:hover {
+    background: #ff90BC;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .form-control {
+   
+    height: 2rem;
+    width: 35rem;
+    }
+  
+  
+  .form-group label{
+    font-weight: 600;
+    
+  } 
+  
+  
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .contact .form {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    padding: 20px;
+  }
+  
+  .contact .container{
+    top: -6rem;
+  }
+  
+  
+  .contact .title-left {
+    margin-bottom: 20px;
+    margin-left: 400px;
+  }
+  
+  .contact form {
+    margin-top: 20px;
+    margin-left: 400px;
+  }
+  .contact .form-group {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .contact .form-group label {
+    display: block;
+    margin-bottom: 15px; /* Adjust as needed */
+  }
+  .contact .form-group textarea {
+    height: 100px;
+  }
+  
+  
+  /*footer*/
+  
+  .footer {
+    position: relative;
+    background-color: #ff90BC; /* Background color for the footer */
+    color: #fff; /* Text color */
+    bottom: -32rem;
+    width: 1450px;
+    text-align: center;
+    height: 4rem;
+   
+  }
+  
+  
+  .footer p {
+    margin: 0; /* Remove default margin for paragraphs inside the footer */
+    font-size: 20px; /* Adjust the font size */
+  
+  }
+  
+  .footer a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  
+  .copyright-box{
+    margin-left: 600px;
+    width: 400px;
+    margin-bottom: 50rem;
+  }
+  .copyright{
+    color: #f5f5f5;
+    position: relative;
+    top: 1rem;
+  }
+  
+  
+  .social-icons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5rem;
+    top: 1rem;
+  
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+  .success-message{
+    margin-right: 100px;
+  }
+  
+
+  @media (max-width: 425px) {
+    .title-center {
+      margin-left: 0; /* Reset margin-left */
+    }
+  
+    .button {
+      width: 30%; /* Adjust button width to fill container */
+      margin-left: 0; /* Reset margin-left */
+      font-size: 0.5rem;
+      font-weight: bold;
+    }
+  
+    .form-control {
+      width: 100%; /* Adjust input width to fill container */
+      max-width: 100%; /* Ensure maximum width */
+    }
+  
+    .contact {
+      height: auto; /* Adjust height to auto */
+      padding: 20px; /* Add padding for better spacing */
+    }
+  
+    .contact .title-left,
+    .contact form {
+      margin-left: 0; /* Reset margin-left */
+      text-align: center; /* Center align text */
+    }
+  
+    .contact .container {
+      top: 0; /* Reset top position */
+    }
+  
+    .footer {
+      width: auto; /* Adjust width to auto */
+      height: 30px;
+      bottom: 0; /* Align footer to the bottom */
+      margin: 0; /* Reset margin */
+      padding: 20px; /* Add padding for better spacing */
+    }
+  
+    .footer p {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  
+    .copyright-box {
+      margin: 0 auto; /* Center align */
+      width: 200px; /* Adjust width to auto */
+      margin-top: -20px;
+      margin-left: 100px;
+     
+    }
+  
+    .social-icons {
+      left: 0; /* Reset left position */
+      justify-content: center; /* Center align icons */
+      margin-top: -5px;
+    }
+    .social-icons img {
+        width: 1rem;
+        margin-right: -2rem;
+    }
+  } 
+
+
+
+  
