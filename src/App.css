@@ -1,15 +1,6 @@
 
 
-/* Default styles for larger screens */
-@media screen and (min-width: 769px) {
-  .navbar-links {
-    display: flex !important; /* Ensure links are always visible on larger screens */
-  }
-
-  .hamburger-menu {
-    display: none; /* Hide the hamburger menu on larger screens */
-  }
-}
+/* Media query for  */
 
 .typed-container {
   position: relative; /* Ensure relative positioning for the container */
@@ -89,7 +80,7 @@
     font-size: 30px;
     top: 100px;
     left: 10px;
-    align-items: center;
+    align-items: left;
     top: 10rem;
   }
 

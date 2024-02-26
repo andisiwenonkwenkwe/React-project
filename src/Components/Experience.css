@@ -167,6 +167,7 @@
     .container ul li:nth-child(odd) {
         transform: translateX(0px);
         text-align: left;
+        padding-right: 0;
     }
     .container ul li:nth-child(even) {
         transform: translateX(0px);

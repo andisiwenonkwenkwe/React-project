@@ -59,7 +59,7 @@
   }
   
   .contact .container{
-    top: -6rem;
+    top: -13rem;
   }
   
   
@@ -91,7 +91,7 @@
     position: relative;
     background-color: #ff90BC; /* Background color for the footer */
     color: #fff; /* Text color */
-    bottom: -32rem;
+    bottom: -25rem;
     width: 1450px;
     text-align: center;
     height: 4rem;

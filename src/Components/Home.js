@@ -45,10 +45,12 @@ const Home = () => {
                 <div className='HomeImageContainer'>
                     <div className="homeImage">
                         <img src={image} alt="my image" />
-                        {/* Use an anchor tag with download attribute to trigger the download */}
                         <a href={cvPDF} download="Andisiwe_Nonkwenkwe_CV.pdf" className="btn" onClick={handleDownloadCV}>
                             Download CV
                         </a>
+                      
+
+
                     </div>
                 </div>
             </div>

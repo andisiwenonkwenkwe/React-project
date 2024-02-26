@@ -40,7 +40,7 @@ function Slideshow() {
 
   return (
     <div className="slideshow" id='testimonies'>
-      <h2>Testimonies</h2>
+      <h3>Testimonies</h3>
       <div
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
