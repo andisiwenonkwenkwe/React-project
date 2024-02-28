@@ -76,14 +76,25 @@
     height: 350px;
     border-radius: 50px 50px 50px 50px;
   }
+
+
+  @media (max-width: 768px) {
+    .slideshow {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      width: 700px;
+      height: 800px;
+  }
+
+  }
+
   
   
   
   @media (max-width: 425px) {
     .slideshow {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
-        width: 400px;
-        height: 700px;
+        width: 350px;
+        height: 705px;
     }
 
     .slide p {

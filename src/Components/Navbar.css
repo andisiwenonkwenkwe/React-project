@@ -49,14 +49,61 @@ nav {
     margin: 4px 0;
     transition: 0.4s;
   }
+
+
+  /* Default styles for larger screens */
+@media screen and (min-width: 769px) {
+  .navbar-links {
+    display: flex !important; /* Ensure links are always visible on larger screens */
+  }
+
+  .hamburger-menu {
+    display: none; /* Hide the hamburger menu on larger screens */
+  }
+}
   
+
+
+  @media only screen and (max-width: 768px ){
+  .navbar-links {
+    display: none; /* Hide the links by default on smaller screens */
+    position: absolute;
+    top: 80px; /* Adjust as needed */
+    left: 0;
+    background-color: #ff90bc;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show the links when active */
+    flex-direction: column; /* Align links vertically */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger menu on smaller screens */
+    cursor: pointer;
+    
+  }
+
+  .navbar-links ul {
+    display: block;
+    margin-left: 10px; /* Reduced margin between navbar links */
+    color: black;
+    
+  }
+  
+}
+
 
 
     /* Media Query for Mobile Devices with max-width: 425px */
     @media (max-width: 425px) {
         nav {
           padding: 10px 0; 
-          width: 419px;
+          width: 365px;
         }
       
         

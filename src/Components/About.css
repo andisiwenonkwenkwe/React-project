@@ -68,39 +68,77 @@
 
 
 
+@media only screen and (max-width: 768px) {
+
+  .about-img-container img {
+    width: 20rem; 
+    left: 13rem; 
+    bottom: -5rem;
+    text-align: center;
+  }
+
+  .about .container .row {
+    flex-direction: column; 
+    gap: 3rem; 
+  }
+
+  .box-shadow-full {
+    width: 45rem; 
+    height: auto; 
+    
+  }
+
+  .title-left {
+    font-size: 20px; 
+    text-align: center; 
+  
+}
+
+.about-content {
+  margin-bottom: 2rem; 
+
+}
+
+}
+
+
 @media (max-width: 425px) {
     .about-img-container img {
-      width: 15rem; /* Adjust image width for smaller screens */
-      right: -2rem; /* Adjust position */
-      bottom: -5rem; /* Adjust position */
+      width: 15rem;
+      left: 3rem;
+      bottom: -5rem;
     }
   
     .about .container .row {
-      flex-direction: column; /* Stack columns in a vertical layout */
-      gap: 3rem; /* Adjust gap between elements */
+      flex-direction: column; 
+      gap: 3rem; 
     }
   
     .about-content {
-      margin-bottom: 3rem; /* Adjust margin */
+      margin-bottom: 3rem; 
     }
   
     .box-shadow-full {
-      width: 100%; /* Make width full for smaller screens */
-      height: auto; /* Adjust height */
+      width: 100%; 
+      height: auto; 
     }
   
     .title-left {
-      font-size: 20px; /* Adjust font size */
-      text-align: center; /* Center align text */
-    }
+      font-size: 20px; 
+      text-align: center; 
   
     .skill-mf .progress,
     .skill-mf .progress .progress-bar {
-      height: 0.5rem; /* Adjust progress bar height */
+      height: 0.5rem; 
     }
   }
+}
 
 
+
+  
+
+  
 
 
   

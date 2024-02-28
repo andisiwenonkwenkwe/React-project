@@ -7,7 +7,7 @@
   .hero-title span{
     color: #ff90bc;
     font-weight: bold;
-    font-size: 2.9rem;
+    font-size: 2.8rem;
     display: inline-flex;
   }
   
@@ -51,7 +51,7 @@
     border-radius: 50%;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     left: 800px;
-    bottom: 200px;
+    bottom: 100px;
     /* Adjust the margin from the top */
   }
   
@@ -65,7 +65,7 @@
   /* Download button style */
   .btn {
     position: relative;
-    right: 70rem;
+    right: 35rem;
     top: -90px;
     font-size: 1.8em;
     border-radius: 10px;
@@ -79,57 +79,110 @@
   .btn:hover {
     background: #ff90BC;
   }
-  
 
-  @media(max-width: 425px) {
-    .hero-title {
-        margin-top: -30px;
-    }
-    .hero-title span {
-      font-size: 2rem; /* Adjust font size for smaller screens */
-    }
-    
-    .typed {
-      font-size: 30px; /* Adjust font size for smaller screens */
-      left: 10px; /* Adjust left position */
-      align-items: center; /* Center content vertically */
-      height: auto; /* Adjust height */
-      padding: 20px; /* Add padding for better spacing */
-      text-align: center; /* Center align text */
-      top: 38rem; /* Adjust top position */
-      cursor: none;
-    }
-    
-    #home .container .hero-title {
-      top: 5rem; /* Adjust top position */
-    }
-    
+
+
+
+  @media only screen and (max-width: 1024px ){
+
     .homeImageContainer {
-      text-align: center; /* Center align */
-      margin-bottom: 70px; /* Adjust margin */
-    }
-    
-    .homeImage {
-      width: 300px; /* Adjust width */
-      height: 300px; /* Adjust height */
-      left: auto; /* Reset left position */
-      top: 60px; /* Reset bottom position */
-      margin: 0 auto 2rem; /* Center align and adjust margin */
-    }
-    
-    .btn {
-      position: static; /* Reset position */
-      margin: 0 auto; /* Center align */
-      display: block; /* Display as block */
-      top: 1rem; /* Reset top */
-      right: 0; /* Reset right */
-      font-size: 1.5em; /* Adjust font size */
+      margin-left: 5rem;
     }
   }
 
 
+  @media(max-width: 768px ){
 
-  /*************** Styles for screens up to 768px *******************/
+    .homeImage {
+      width: 450px;
+      height: 450px;
+      left: 150px;
+      top: 7rem;
+      /* Adjust the margin from the top */
+    }
 
+    .homeImageContainer {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
 
- 
+    #home .container .hero-title {
+      top: 1rem; 
+      padding: 2rem;
+      left: 5rem;
+    }
+
+    .hero-title span{
+      font-weight: bold;
+      font-size: 2.7rem;
+    }
+
+    .typed {
+      font-size: 40px;
+      margin-top: -16rem; /* Align text to the top */
+      left: 7rem; /* Adjust left position as needed */
+      height: 100vh;
+    }
+
+    .btn {
+      position: relative;
+      right: -8.5rem;
+      top: 2rem;
+      font-size: 1.8em;
+      border-radius: 10px;
+    }
+
+      .hero-title {
+
+        text-align: center;
+
+      }
+    
+    }
+    
+
+ @media(max-width: 425px) {
+    .hero-title {
+        margin-top: -30px;
+        margin-left: -8rem;
+    }
+    .hero-title span {
+      font-size: 2rem; 
+    }
+    
+    .typed {
+      font-size: 30px; 
+      left: 10px;
+      align-items: center; 
+      height: auto; 
+      padding: 20px; 
+      text-align: center; 
+      top: 1rem; 
+      cursor: none;
+    }
+    
+    #home .container .hero-title {
+      top: 5rem;
+    }
+    .homeImageContainer {
+      text-align: center; 
+      margin-bottom: 70px; 
+    }
+    
+    .homeImage {
+      width: 200px; 
+      height: 200px; 
+      left: auto; 
+      top: 60px; 
+      margin: 0 auto 2rem; 
+    }
+    
+    .btn {
+      position: static; 
+      display: block; 
+      top: 1rem; 
+      right: 0; 
+      font-size: 1.5em; 
+       
+    }
+  }

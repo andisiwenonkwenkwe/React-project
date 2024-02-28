@@ -176,6 +176,7 @@
   @media(max-width: 550px) {
     .container{
         width: 80%;
+        padding-right: 5rem;
     }
     .container ul::after{
         left: -20px;

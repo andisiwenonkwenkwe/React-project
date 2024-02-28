@@ -9,6 +9,7 @@
   
   #projects .container h3 {
     color: black;
+  
   }
   
   .work-box {
@@ -137,14 +138,6 @@
     margin: 0 4px; /* Adjust the spacing between dots */
   }
   
-  .slick-dots li button {
-   
-    border-radius: 50%; /* Make the dots circular */
-    background-color: red; /* Set the background color of the dots */
-    border: none; /* Remove border */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Add transition for hover effect */
-  }
   
   .slick-dots li button:hover {
     background-color: red; /* Change background color on hover */
@@ -194,22 +187,59 @@
     font-size: 1rem;
    
   }
-    /************Style for max-width 425*********/
+  
+  
+  @media (max-width: 768px) {
+
+    .Slider { 
+      width: 650px;
+      left: -40px;
+    }
+
+    .projects h3{
+      margin-left: 15rem;
+    }
+    
+    .slick-dots {
+    margin-left: 7rem;
+    }
+
+    .Slider img {
+      
+      width: 600px;
+      margin-left: 440px;
+ 
+    }
+
+    .description-container {
+      left: 150px;
+      width: 650%;
+    }
+    
+
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /************Style for max-width 425*********/
 
   @media (max-width: 425px) {
     #projects .container {
-      height: auto; /* Adjust height to auto */
+      height: auto;
+
     }
   
     .work-box {
       top: 0; /* Reset top position */
+    
     }
   
-    .work-img img {
-      height: auto; /* Adjust height to auto */
-      width: 80%; /* Ensure images fill their containers */
-      margin: 0; /* Remove margin */
-    }
+    
   
     .text-center .btn {
       width: auto; /* Adjust button width to fit content */
@@ -218,15 +248,15 @@
   
     .Slider {
       height: auto; /* Adjust height to auto */
-      max-width: 80%; /* Ensure slider fills its container */
+      width: 250px; /* Ensure slider fills its container */
       left: 3rem; /* Reset left position */
     }
   
     .Slider img {
       height: auto; /* Adjust height to auto */
-      width: 80%; /* Ensure images fill their containers */
+      width: 200px; /* Ensure images fill their containers */
       padding: 0; /* Remove padding */
-      margin: 0 auto; /* Center align images */
+      margin-left: 35px;
       
     }
   
@@ -250,8 +280,10 @@
   
     .projects p,
     .projects h3 {
-      padding-left: 0; /* Reset padding */
       text-align: center; /* Center align text */
+        font-size: 20px;
+        margin-left: 2rem;
+      
     }
   
     .description-container {
@@ -265,9 +297,7 @@
         text-align: center;
         display: none;
         z-index: 1;
-        height: auto; /* Adjust height to fit content */
         width: 80%; /* Adjust width as needed */
-        max-width: 100%; /* Adjust max-width as needed */
         margin-left: 10px;
     }
   
