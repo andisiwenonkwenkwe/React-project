@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js';
-import image from './images/012.jpg';
-import cvPDF from './Documents/andisiwe.pdf';
+import image from '../images/012.jpg';
+import cvPDF from '../Documents/andisiwe.pdf';
 import './Home.css';
 
 const Home = () => {
@@ -31,17 +31,14 @@ const Home = () => {
     return (
         <div>
             <div className="home" id="home">
-               
-                  
-                        <div className="container">
-                            <h1 className="hero-title"> Hellow I am  <span>Andisiwe Nonkwenkwe</span></h1>
-                            <p className="hero-subtitle">
-                                <span className="typed"></span>
-                            </p>
-                        </div>
-                   
-               
-            
+
+                <div className="container">
+                    <h1 className="hero-title"> Hello I am  <span>Andisiwe Nonkwenkwe</span></h1>
+                    <p className="hero-subtitle">
+                        <span className="typed"></span>
+                    </p>
+                </div>
+                 
                 <div className='HomeImageContainer'>
                     <div className="homeImage">
                         <img src={image} alt="my image" />
@@ -51,6 +48,7 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
+            
             </div>
         </div>
     );

@@ -4,11 +4,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Projects.css';
 
-import image1 from './images/Financial Calculator.jpg';
-import image2 from './images/Tax Calculator.webp';
-import image3 from './images/Matrix Converter.png';
-import image4 from './images/Flappy bird.jpg';
-import image5 from './images/Banking App.jpg';
+import image1 from '../images/Financial Calculator.jpg';
+import image2 from '../images/Tax Calculator.webp';
+import image3 from '../images/Matrix Converter.png';
+import image4 from '../images/Flappy bird.jpg';
+import image5 from '../images/Banking App.jpg';
 
 const ProjectSlider = () => {
   // Sample project data

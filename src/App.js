@@ -5,13 +5,13 @@ import './App.css';
 
 
 
-import Navbar from './Components/NavBar';
-import Home from './Components/Home';
-import About from './Components/About';
-import Experience from './Components/Experience';
-import Slideshow from './Components/Testimonies';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact'
+import Navbar from './Components/Home/NavBar';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Experience from './Components/Experience/Experience';
+import Slideshow from './Components/Testimonies/Testimonies';
+import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact'
 
 
 

@@ -94,6 +94,9 @@ nav {
     color: black;
     
   }
+  nav {
+    width: 768px;
+  }
   
 }
 
@@ -103,7 +106,7 @@ nav {
     @media (max-width: 425px) {
         nav {
           padding: 10px 0; 
-          width: 365px;
+          width: 410px;
         }
       
         

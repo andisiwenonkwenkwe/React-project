@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 import emailjs from "emailjs-com";
-import github from './images/github-logo.svg';
-import linkedin from './images/linkedin.svg';
-import phone from './images/phone.svg';
-import emailIcon from './images/envelope.svg';
-import whatsapp from './images/whatsapp-logo.svg';
+import github from '../images/github-logo.svg';
+import linkedin from '../images/linkedin.svg';
+import phone from '../images/phone.svg';
+import emailIcon from '../images/envelope.svg';
+import whatsapp from '../images/whatsapp-logo.svg';
 import ReCAPTCHA from 'react-google-recaptcha';
 import './Contact.css';
 
