@@ -68,7 +68,7 @@ nav {
   .navbar-links {
     display: none; /* Hide the links by default on smaller screens */
     position: absolute;
-    top: 80px; /* Adjust as needed */
+    top: 50px; /* Adjust as needed */
     left: 0;
     background-color: #ff90bc;
     width: 100%;
@@ -90,12 +90,12 @@ nav {
 
   .navbar-links ul {
     display: block;
-    margin-left: 10px; /* Reduced margin between navbar links */
+    
     color: black;
     
   }
   nav {
-    width: 768px;
+    max-width: 100%;
   }
   
 }
@@ -103,7 +103,7 @@ nav {
 
 
     /* Media Query for Mobile Devices with max-width: 425px */
-    @media (max-width: 425px) {
+    /* @media (max-width: 425px) {
         nav {
           padding: 10px 0; 
           width: 410px;
@@ -112,27 +112,27 @@ nav {
         
       
         .navbar-logo {
-          font-size: 24px; /* Reduced font size for the logo */
+          font-size: 24px;  
         }
       
         .navbar-links ul {
           display: block;
-          margin-left: 10px; /* Reduced margin between navbar links */
+          margin-left: 10px;  
           color: black;
          
           
         }
       
         .bar {
-          width: 20px; /* Adjusted width of the hamburger menu bars */
-          margin: 3px 0; /* Adjusted margin of the hamburger menu bars */
+          width: 20px;  
+          margin: 3px 0;  
           
         }
       
         .navbar-links {
-            top: 60px; /* Adjusted top position of the links */
-            padding: 5px 0; /* Adjusted padding for the links */
-            display: none; /* Hide the links by default on smaller screens */
+            top: 60px;
+            padding: 5px 0;
+            display: none; 
             position: absolute;
             left: 0;
             
@@ -141,21 +141,19 @@ nav {
             transition: all 0.3s ease;
            
             gap: 0.5rem;
-            justify-content: center; /* Center items horizontally */
-           
+            justify-content: center;
             cursor: pointer;
             right: 0;
         }
         
       
         .navbar-links.active {
-          display: flex; /* Show the links when active */
-          
+          display: flex; 
         
         }
       
         .hamburger-menu {
-          display: block; /* Show the hamburger menu on smaller screens */
+          display: block; 
           cursor: pointer;
           width: 24px;
           height: 24px;
@@ -170,4 +168,4 @@ nav {
 
 
 
-      
+       */

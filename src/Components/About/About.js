@@ -5,7 +5,7 @@ import './About.css';
 const About = () => {
     return (
         <div className="about" id="about">
-            <section className="about-mf">
+        
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
@@ -13,7 +13,7 @@ const About = () => {
                                 <img src={image} alt="About Me" className="about-img" />
                             </div>
                         </div>
-                        <div className="col-md-6 d-flex align-items-center">
+                       
                             <div className="about-content">
                                 <div className="box-shadow-full">
                                     <h5 className="title-left">About Me</h5>
@@ -36,27 +36,26 @@ const About = () => {
                                             <div className="progress">
                                                 <div className="progress-bar" role="progressbar" style={{ width: '98%' }} aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            {/* Include other skill spans and progress bars */}
 
                                             <span>CSS</span> <span className="pull-right">90%</span>
                                                 <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '95%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div className="progress-bar" role="progressbar" style={{ width: '90%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span>JavaScript</span> <span className="pull-right">65%</span>
                                                 <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '95%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div className="progress-bar" role="progressbar" style={{ width: '65%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span>Java</span> <span className="pull-right">85%</span>
                                                 <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '95%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div className="progress-bar" role="progressbar" style={{ width: '85%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span>Python</span> <span className="pull-right">80%</span>
                                                 <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '95%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div className="progress-bar" role="progressbar" style={{ width: '80%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span>Node.js</span> <span className="pull-right">70%</span>
                                                 <div className="progress">
-                                                    <div className="progress-bar" role="progressbar" style={{ width: '95%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div className="progress-bar" role="progressbar" style={{ width: '70%' }} aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 
                                             
@@ -65,10 +64,10 @@ const About = () => {
                                     
                                 </div>
                             </div>
-                        </div>
+                      
                     </div>
                 </div>
-            </section>
+         
         </div>
     );
 };

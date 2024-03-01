@@ -32,9 +32,10 @@ const Home = () => {
         <div>
             <div className="home" id="home">
 
-                <div className="container">
+                <div className="home-container">
                     <h1 className="hero-title"> Hello I am  <span>Andisiwe Nonkwenkwe</span></h1>
                     <p className="hero-subtitle">
+                        
                         <span className="typed"></span>
                     </p>
                 </div>
@@ -47,6 +48,7 @@ const Home = () => {
                             Download CV
                         </a>
                     </div>
+                    
                 </div>
             
             </div>
