@@ -10,7 +10,7 @@
     color: #ff90bc;
     font-weight: bold;
     font-size: 2.8rem;
-    display: inline-flex;
+    display: block;
   }
   
   
@@ -166,7 +166,7 @@
 
     @media(max-width: 450px) {
     .home{
-      border: 2px red solid;
+    
       padding: 0;
       flex-direction: column;
       justify-content: center;
@@ -181,7 +181,7 @@
     }
 
     .hero-title  {
-      border: red solid 2px;
+      
       padding-top: 0;
       margin-top: -2rem;  
       font-size: 2rem;

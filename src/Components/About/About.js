@@ -7,13 +7,11 @@ const About = () => {
         <div className="about" id="about">
         
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-6">
+                    <div className="row"> 
                             <div className="about-img-container">
                                 <img src={image} alt="About Me" className="about-img" />
                             </div>
-                        </div>
-                       
+                      
                             <div className="about-content">
                                 <div className="box-shadow-full">
                                     <h5 className="title-left">About Me</h5>

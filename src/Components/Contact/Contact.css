@@ -220,70 +220,78 @@
   
 
   @media (max-width: 425px) {
-    .title-center {
-      margin-left: 0; /* Reset margin-left */
-    }
-  
-    .button {
-      width: 30%; /* Adjust button width to fill container */
-      margin-left: 0; /* Reset margin-left */
-      font-size: 0.5rem;
-      font-weight: bold;
-    }
-  
     .form-control {
-      width: 80%; /* Adjust input width to fill container */
-      max-width: 95%; /* Ensure maximum width */
+      width: 100%;
+      
     }
   
     .contact {
-      height: auto; /* Adjust height to auto */
-      padding: 20px; /* Add padding for better spacing */
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      height: auto;
+      margin-bottom: 0;
     }
   
-    .contact .title-left,
-    .contact form {
-      margin-left: 0; /* Reset margin-left */
-      text-align: center; /* Center align text */
+    .contact .title-left {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      font-size: 16px;
+      
     }
-  
-    .contact .container {
-      top: 0; /* Reset top position */
+    .contact .form {
+      width: 220%;
+      padding: 0;
+      margin-left: 0;
+      margin: 0 auto;  
+      margin-right: 0; 
+      max-width: 400px;
     }
+    
+
+
+    .title-center {
+      margin: 0;
+      margin-top: 11.5rem;
+      margin-right: 0;
+      font-size: 25px;
+    }
+   
+    
   
     .footer {
-      width: auto; /* Adjust width to auto */
-      height: 30px;
-      bottom: 0; /* Align footer to the bottom */
-      margin: 0; /* Reset margin */
-      padding: 20px; /* Add padding for better spacing */
-    }
-  
-    .footer p {
-      font-size: 16px; /* Adjust font size for smaller screens */
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-top: 0;
+      bottom: 0;
+      height: 6rem;
+      text-align: center;
     }
   
     .copyright-box {
-      margin: 0 auto; /* Center align */
-      width: 200px; /* Adjust width to auto */
-      margin-top: -20px;
-      margin-left: 125px;
-     
+      /* margin-left: 10rem; */
+      margin: 0;
+      padding: 0;
+      margin-top: 0;
+      width: 100%;
+      bottom: 25px;
     }
-    .row{
-      flex-direction: column;
-    }
-    
   
     .social-icons {
-      left: 0; /* Reset left position */
-      justify-content: center; /* Center align icons */
-      margin-top: -5px;
+      /* margin-right: 3rem; */
+      bottom: -21px;
     }
-    .social-icons img {
-        width: 1rem;
-        margin-right: -3rem;
+
+    .button {
+      margin-top: rem;
     }
+   
+   
+   
   } 
 
 

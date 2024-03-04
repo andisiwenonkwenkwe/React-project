@@ -248,7 +248,7 @@
     .Slider {
       height: auto; /* Adjust height to auto */
       width: 250px; /* Ensure slider fills its container */
-      left: 3rem; /* Reset left position */
+      left: 4rem; /* Reset left position */
     }
   
     .Slider img {
@@ -304,13 +304,20 @@
         display: block;
     }
   
-    .description { 
-        color: #000;
-        font-size: 6px;
-        margin-left: 250px;
-        width: 80%;
-        height: auto;
+
+    .description-container {
+    
+      width: 450px;
+      height: 180px;
     }
+   
+
+    .description { 
+      
+      
+      width: 57%;
+      height: auto;
+  }
       
   }
 
