@@ -40,7 +40,7 @@ const Home = () => {
                     </p>
                 </div>
                  
-                <div className='HomeImageContainer'>
+               
                     <div className="homeImage">
                         <img src={image} alt="my image" />
                         {/* Use an anchor tag with download attribute to trigger the download */}
@@ -49,7 +49,7 @@ const Home = () => {
                         </a>
                     </div>
                     
-                </div>
+
             
             </div>
         </div>

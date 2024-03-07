@@ -6,7 +6,7 @@ const Experience = () => {
         <div className="experience" id="experience">
          
                 <h3 className="head">Work Experience</h3>
-                                        <div className="container">
+                                        <div className="experience-container">
                                             <ul>
                                                 <li>
                                                     <h3 className="heading">Software Developer Intern</h3>

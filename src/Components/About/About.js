@@ -6,14 +6,14 @@ const About = () => {
     return (
         <div className="about" id="about">
         
-                <div className="aboutcontainer">
+                <div className="about-container">
                     <div className="row"> 
                             <div className="about-img-container">
                                 <img src={image} alt="About Me" className="about-img" />
                             </div>
                       
                             <div className="about-content">
-                                <div className="box-shadow-full">
+                              
                                     <h5 className="title-left">About Me</h5>
                                     <p className="lead">
                                         I am a results-driven professional in the field of Information Technology 
@@ -60,7 +60,7 @@ const About = () => {
                                         </div>
                                     </div>
                                     
-                                </div>
+                             
                             </div>
                       
                     </div>

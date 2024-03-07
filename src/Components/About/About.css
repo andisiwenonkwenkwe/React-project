@@ -7,36 +7,30 @@
 
 .about-img {
   margin-bottom: 2rem;
+  
 }
 
 
-.about-img img {
-  width: 100%;
-  max-width: 2rem;
-  height: auto;
-}
+
 .about-img-container img{
   position: relative;
-  width: 20rem;
+  width: 25rem;
   height: auto;
   border-radius: 30%;
   right: -4rem;
   bottom: -7rem;
 }
-.about .aboutcontainer .row{
+.about .about-container .row{
   display: flex;
   gap: 10rem;
 }
 .about-content{
   margin-bottom: 500px;
+  width: 50rem;
+  height: 15rem;
+  justify-content: flex-end;
 }
 
-.box-shadow-full{
-  width: 50rem;
-  height: 10rem;
-  justify-content: flex-end;
-  
-}
 .lead{
   font-size: .8rem;
 }
@@ -78,45 +72,49 @@
 
 @media only screen and (max-width: 768px) {
 
-  .about .aboutcontainer {
-    width: 768px;
-    margin-left: -20px;
+  .about .about-container {
+    width: auto;
+    margin-left: 0.5rem;
+   
   }
 
   .about-img-container img {
     width: 20rem; 
     left: 13rem; 
-    bottom: -5rem;
+    bottom: -7rem;
     text-align: center;
   }
 
-  .about .aboutcontainer .row {
+  .about .about-container .row {
     flex-direction: column; 
     gap: 3rem; 
   }
 
-  .box-shadow-full {
-    width: 45rem; 
-    height: auto; 
-    
-  }
 
-  .title-left {
+
+  .title-left  {
     font-size: 20px; 
     text-align: center; 
+   
   
 }
 
 .about-content {
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
+ width: 700px;
+    height: auto;  
 
 }
+
 
 }
 
 
 @media (max-width: 450px) {
+
+
     
+
  
   .about-img-container {
       margin: 0;
@@ -128,16 +126,17 @@
       bottom: -5rem; */
     }
   
-    .about .aboutcontainer .row {
+    .about .about-container .row {
       flex-direction: column; 
       gap: 3rem; 
-      width: 420px;
+
+     
     }
   
    
   
-    .box-shadow-full {
-      width: 100%; 
+    .about-content {
+ 
       height: auto; 
     }
   
@@ -149,8 +148,9 @@
       width: 100%;
 
     }
-    .box-shadow-full{
-      width: 50%;
+    .about-content{
+      width: 400px;
+      margin-right: 1rem;
     }
    
     .skill-mf{
@@ -174,9 +174,11 @@
     bottom: -5rem;
     text-align: center;
   }
-  .aboutcontainer{
-    width: 420;
-    display: none;
+
+
+
+  .lead{
+    width: 400px;
   }
 
   }

@@ -44,23 +44,15 @@ const Contact = () => {
     return (
         <div className="contact" id="contact">
             <section className="portfolio">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 offset-md-3">
-                            <div className="contact-mf">
-                                <div className="box-shadow-full">
-                                    <div className="title-box-">
-                                        <h1 className="title-center">
-                                            Contact Me
-                                        </h1>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-md-12">
-                                            <div className="title-box-2">
-                                                <h5 className="title-left">
-                                                    Send Me A Message
-                                                </h5>
-                                            </div>
+                <div className="contact-container">
+                     <h1 className="title-center">
+                          Contact Me
+                           </h1>
+                            <h5 className="contact-title-left">
+                                 Send Me A Message
+                                 </h5>
+                                
+                    
                                             <div>
                                                 <form onSubmit={sendEmail} ref={form} className='form'>
                                                     <div className="form-group">
@@ -97,12 +89,6 @@ const Contact = () => {
                                                     </div>
                                                 )}
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div className="footer" id="footer">
                     <footer>
@@ -126,12 +112,12 @@ const Contact = () => {
                                             <img src={whatsapp} alt="whatsapp" />
                                         </a>
                                     </div>
-                                    <div className="copyright-box">
+
                                         <p className="copyright">
                                             &copy; Copyright <strong>Andisiwe</strong>.
                                             All Rights Reserved
                                         </p>
-                                    </div>
+                              
                                 </div>
                             </div>
                         
