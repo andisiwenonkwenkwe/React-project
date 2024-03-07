@@ -23,7 +23,7 @@
   right: -4rem;
   bottom: -7rem;
 }
-.about .container .row{
+.about .aboutcontainer .row{
   display: flex;
   gap: 10rem;
 }
@@ -78,7 +78,7 @@
 
 @media only screen and (max-width: 768px) {
 
-  .about .container {
+  .about .aboutcontainer {
     width: 768px;
     margin-left: -20px;
   }
@@ -90,7 +90,7 @@
     text-align: center;
   }
 
-  .about .container .row {
+  .about .aboutcontainer .row {
     flex-direction: column; 
     gap: 3rem; 
   }
@@ -128,9 +128,10 @@
       bottom: -5rem; */
     }
   
-    .about .container .row {
+    .about .aboutcontainer .row {
       flex-direction: column; 
       gap: 3rem; 
+      width: 420px;
     }
   
    
@@ -172,6 +173,10 @@
     left: 2rem; 
     bottom: -5rem;
     text-align: center;
+  }
+  .aboutcontainer{
+    width: 420;
+    display: none;
   }
 
   }

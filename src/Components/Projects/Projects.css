@@ -270,6 +270,7 @@
       padding: 2rem 0; /* Add padding for better spacing */
       text-align: center; /* Center align text */
       background-color: #ede1e1; /* Keep background color */
+      width: 420px;
     }
   
     .projects h2 {

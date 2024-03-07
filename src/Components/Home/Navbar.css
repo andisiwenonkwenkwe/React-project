@@ -103,10 +103,10 @@ nav {
 
 
     /* Media Query for Mobile Devices with max-width: 425px */
-    /* @media (max-width: 425px) {
+   @media (max-width: 425px) {
         nav {
           padding: 10px 0; 
-          width: 410px;
+          width: 423px;
         }
       
         
@@ -167,5 +167,3 @@ nav {
       
 
 
-
-       */
